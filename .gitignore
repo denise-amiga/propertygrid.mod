@@ -50,3 +50,4 @@ Temporary Items
 *.sublime-project
 *.gradle
 *.exe
+*.html
