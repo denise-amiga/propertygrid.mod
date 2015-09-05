@@ -108,4 +108,14 @@ Type TPropertyItemChoice Extends TPropertyItem
 		SelectGadgetItem(interact, index)
 	End Method
 
+
+	Rem
+		bbdoc:   Returns item as a string.
+		about:   format: paramater,itemtype,name,value
+		returns: String
+	EndRem
+	Method ToString:String()
+		Return "parameter,choice," + Self.Getlabel() + ","+Self.GetValueLabel()
+	EndMethod
+
 End Type

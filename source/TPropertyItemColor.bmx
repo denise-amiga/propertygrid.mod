@@ -144,5 +144,15 @@ Type TPropertyItemColor Extends TPropertyItem
 		SetGadgetText(colorLabel, "(" + String(r) + "," + String(g) + "," + String(b) + ")")
 	End Method
 
+
+	Rem
+		bbdoc:   Returns item as a string.
+		about:   format: paramater,itemtype,name,values
+		returns: String
+	EndRem
+	Method ToString:String()
+		Return "parameter,color," + Self.Getlabel() + ","+Self.GetRed()+"+"+ Self.GetGreen()+ "+" + Self.GetBlue()
+	EndMethod
+
 End Type
 

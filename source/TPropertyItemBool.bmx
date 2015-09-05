@@ -96,5 +96,15 @@ Type TPropertyItemBool Extends TPropertyItem
 		UpdateBoolText()
 	End Method
 
+
+	Rem
+		bbdoc:   Returns item as a string.
+		about:   format: paramater,itemtype,name,value
+		returns: String
+	EndRem
+	Method ToString:String()
+		Return "parameter,bool," + Self.Getlabel() + ","+Self.GetValue()
+	EndMethod
+
 End Type
 

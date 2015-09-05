@@ -1,4 +1,3 @@
-
 rem
 bbdoc: creates a disk path item.
 endrem
@@ -150,6 +149,16 @@ Type TPropertyItemPath Extends TPropertyItem
 		EndIf
 		Return 1
 	End Function
+
+
+	Rem
+		bbdoc:   Returns item as a string.
+		about:   format: paramater,itemtype,name,value
+		returns: String
+	EndRem
+	Method ToString:String()
+		Return "parameter,path," + Self.Getlabel() + ","+Self.GetValue()
+	EndMethod
 
 End Type
 

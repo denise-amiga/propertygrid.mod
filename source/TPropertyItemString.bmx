@@ -92,6 +92,16 @@ Type TPropertyItemString Extends TPropertyItem
 		Return 1
 	End Function
 
+
+	Rem
+		bbdoc:   Returns item as a string.
+		about:   format: paramater,itemtype,name,value
+		returns: String
+	EndRem
+	Method ToString:String()
+		Return "parameter,string," + Self.Getlabel() + ","+Self.GetValue()
+	EndMethod
+
 End Type
 
 

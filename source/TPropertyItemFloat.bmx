@@ -132,5 +132,14 @@ Type TPropertyItemFloat Extends TPropertyItem
 		If decimal < 0.5 Return Floor(val) Else Return Ceil(val)
 	EndMethod
 
+	Rem
+		bbdoc:   Returns item as a string.
+		about:   format: paramater,itemtype,name,value
+		returns: String
+	EndRem
+	Method ToString:String()
+		Return "parameter,float," + Self.Getlabel() + ","+Self.GetValue()
+	EndMethod
+
 End Type
 

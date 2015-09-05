@@ -49,4 +49,13 @@ Type TPropertyItem Extends TPropertyBase Abstract
 		EmitEvent CreateEvent(id, Self, itemID, 0, 0, 0, extra)
 	End Method
 
+
+
+	Rem
+		bbdoc:   Returns property item settings as string.
+		about:	 format: paramater,itemtype,name,value
+		returns: String
+	EndRem
+	Method ToString:String() Abstract
+
 End Type

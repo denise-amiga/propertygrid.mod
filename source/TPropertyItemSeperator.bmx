@@ -21,6 +21,17 @@ Type TPropertyItemSeparator Extends TPropertyItem
 		Return Self
 	End Method
 
+
+
+	Rem
+		bbdoc:   Returns item as a string.
+		about:   format: paramater,itemtype,name,value
+		returns: String
+	EndRem
+	Method ToString:String()
+		Return "parameter,seperator," + Self.Getlabel() + ",n/a"
+	EndMethod
+
 End Type
 
 
